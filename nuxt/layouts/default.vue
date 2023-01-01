@@ -17,10 +17,21 @@ html, body {
   padding: 0;
 }
 
+button {
+  border-radius: 15em;
+  outline: 0;
+  border: none;
+  padding: 0.5em 1em;
+  box-shadow: 0 5px 1em rgba(0, 0, 0, 0.25);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
 .icon {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   filter: invert(1);
+  vertical-align: center;
 }
 </style>

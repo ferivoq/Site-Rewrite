@@ -6,7 +6,7 @@
       <span style="margin-left: 1em; transform: translateY(15%);">VueTube</span>
     </div>
 
-    <div style="float: right; transform: translateY(-100%);">
+    <div style="float: right; transform: translateY(-110%);">
       <NuxtLink v-for="link, l, in links" :key="l" :to="link.to" target="_blank" class="links">
         <div class="icon" style="margin-left: 1em;" :style="`background-image: url('${link.icon}')`"></div>
         <span style="margin-left: 0.25em;">{{ link.name }}</span>
@@ -51,6 +51,7 @@ export default {
       links: [
         { name: "GitHub", icon: "/icons/github.svg", to: "https://github.com/VueTubeApp/VueTube" },
         { name: "Discord", icon: "/icons/discord.svg", to: "https://github.com/VueTubeApp/VueTube" },
+        { name: "Wiki", icon: "/icons/book.svg", to: "https://github.com/VueTubeApp/VueTube/wiki" },
       ]
     }
   }
