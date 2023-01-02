@@ -2,11 +2,12 @@
   <header>
     
     <div>
+      <button class="menuButton" v-if="sidebar"><div class="icon" style="background-image: url('/icons/bars.svg')"></div></button>
       <div class="icon vt-logo" />
       <span style="margin-left: 1em; transform: translateY(15%);">VueTube</span>
     </div>
 
-    <div style="float: right; transform: translateY(-110%);">
+    <div style="float: right; transform: translateY(-110%);"  v-if="!sidebar">
       <NuxtLink v-for="link, l, in links" :key="l" :to="link.to" target="_blank" class="links">
         <div class="icon" style="margin-left: 1em;" :style="`background-image: url('${link.icon}')`"></div>
         <span style="margin-left: 0.25em;">{{ link.name }}</span>
@@ -25,6 +26,10 @@ header > div {
   display: flex;
 }
 
+.menuButton {
+  background: none;
+  box-shadow: none;
+}
 .vt-logo {
   background-image: url('/logos/nobg-white.svg');
   filter: invert(0);
@@ -48,9 +53,10 @@ header > div {
 export default {
   data() {
     return {
+      sidebar: false,
       links: [
         { name: "GitHub", icon: "/icons/github.svg", to: "https://github.com/VueTubeApp/VueTube" },
-        { name: "Discord", icon: "/icons/discord.svg", to: "https://github.com/VueTubeApp/VueTube" },
+        { name: "Discord", icon: "/icons/discord.svg", to: "/discord" },
         { name: "Wiki", icon: "/icons/book.svg", to: "https://github.com/VueTubeApp/VueTube/wiki" },
       ]
     }

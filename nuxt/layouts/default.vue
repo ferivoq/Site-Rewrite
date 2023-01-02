@@ -6,6 +6,10 @@
 </template>
 
 <style>
+:root {
+  --grey: #999;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: white;

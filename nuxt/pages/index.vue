@@ -5,6 +5,7 @@
     <h1 style="font-size: 3em; margin-top: 0.5em;">VueTube</h1>
 
     <dlbtn />
+    <NuxtLink to="/downloads" style="text-decoration: none;"><a style="color: var(--grey)">More downloads</a></NuxtLink>
 
   </center>
 </template>
