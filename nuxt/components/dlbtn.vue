@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="unavailable">VueTube isn't available for your current platform</div>
+    <div class="warning" v-if="unavailable">VueTube isn't available for your current platform</div>
     <button :disabled="unavailable">
       <div class="icon" style="margin-right: 0.5em;" :style="`background-image: url('/icons/${icon}.svg')`"></div>
       Download for {{ platform }}
@@ -10,6 +10,10 @@
 </template>
 
 <style scoped>
+.warning {
+  margin-bottom: 25px;
+}
+
 button {
   background-color: #182E3F;
   display: flex;
