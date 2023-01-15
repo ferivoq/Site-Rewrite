@@ -56,7 +56,7 @@ export default {
       sidebar: false,
       links: [
         { name: "GitHub", icon: "/icons/github.svg", to: "https://github.com/VueTubeApp/VueTube" },
-        { name: "Discord", icon: "/icons/discord.svg", to: "/discord" },
+        { name: "Discord", icon: "/icons/discord.svg", to: "https://discord.com/invite/7P8KJrdd5W" },
         { name: "Wiki", icon: "/icons/book.svg", to: "https://github.com/VueTubeApp/VueTube/wiki" },
       ]
     }
